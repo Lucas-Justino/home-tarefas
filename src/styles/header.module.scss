@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.25rem; 
+    padding-left: 2.5rem; 
+    padding-right: 2.5rem; 
+    gap: 1.25rem; 
+  }
+  
+  .headerContent {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+  }
+  
+  .logoContainer {
+    display: flex;
+    gap: 0.5rem; 
+    align-items: center;
+  }
+  
+  .title {
+    font-weight: bold; 
+    font-size: 1.5rem; 
+    color: #101828;
+  }
+  
+  .welcomeMessage {
+    font-weight: 500; 
+    font-size: 1.5rem; 
+  }
+  
+  .date {
+    color: rgba(0, 0, 0, 0.54); 
+    font-weight: 500; 
+    font-size: 1.125rem; 
+  }
+  
+  .separator {
+    height: 1px; 
+    width: 100%; 
+    background-color: #d7dde9; 
+  }
+  
+  @media screen and (max-width: 768px) {
+    .headerContent {
+      flex-direction: column; 
+      align-items: flex-start; 
+      gap: 1rem; 
+    }
+  
+    .title, .welcomeMessage, .date {
+      font-size: 1.25rem; 
+      text-align: left; 
+    }
+  }

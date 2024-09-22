@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 410px; 
+  height: 232px; 
+  border-radius: 1rem; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  border: 1px solid #eaecf0; 
+  padding: 1.25rem 1.75rem; 
+  gap: 1.5rem; 
+  background-color: white; 
+}
+
+.title {
+  font-weight: 600; 
+  font-size: 1.5rem; 
+}
+
+.subtitle {
+  color: rgba(0, 0, 0, 0.54); 
+  font-size: 1rem; 
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1rem; 
+  margin-top: auto; 
+}
+
+
+@media screen and (max-width: 768px) {
+  .buttonContainer {
+      flex-direction: column; 
+      gap: 0.5rem; 
+  }
+
+  .container {
+      width: 90%; 
+      height: auto; 
+  }
+}

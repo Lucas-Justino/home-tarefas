@@ -1,0 +1,107 @@
+.taskContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 386px;
+  height: 56px;
+  border: 1px dashed #d7dde9;
+  border-radius: 8px;
+  padding: 0 20px;
+
+  &:hover {
+    background-color: #f7f9fd;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%; 
+    padding: 0 12px 0 12px; 
+  }
+}
+
+.taskContent {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  @media (max-width: 768px) {
+    gap: 12px; 
+  }
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 1px solid #d7dde9;
+  border-radius: 4px;
+  appearance: none;
+  cursor: pointer;
+
+  &:checked {
+    background-color: #a0dcf6;
+    border-color: #0796d3;
+    color: #0796d3;
+
+    &::after {
+      content: "✔";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 18px; 
+    height: 18px;
+  }
+}
+
+.taskLabel {
+  margin-left: 8px;
+  color: rgba(0, 0, 0, 0.54);
+
+  &.completed {
+    text-decoration: line-through;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px; 
+    margin-left: 6px;
+  }
+}
+
+.trashIcon {
+  cursor: pointer;
+  margin-left: auto;
+
+  @media (max-width: 768px) {
+    font-size: 18px; 
+  }
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 10;
+
+  @media (max-width: 768px) {
+    backdrop-filter: blur(3px); 
+  }
+}
+
+.modalContainer {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+
+  @media (max-width: 768px) {
+    padding: 16px; 
+  }
+}

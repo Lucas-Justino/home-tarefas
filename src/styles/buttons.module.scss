@@ -1,0 +1,74 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 185px; // Tamanho padrão para desktop
+    height: 51px;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .addButton {
+    background: linear-gradient(to right, #0796D3, #53C0F0);
+    color: white;
+  }
+  
+  .cancelButton {
+    background-color: #E7EEFB;
+  }
+  
+  .deleteButton {
+    background: linear-gradient(to right, #D30707, #F05353);
+    color: white;
+  }
+
+  .newTaskButton {
+    background: linear-gradient(to right, #0796D3, #53C0F0);
+    color: white;
+    width: 450px;
+    height: 51px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+  
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+  }
+  
+  .modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    transform: translateY(-60px);
+  }
+  
+  /* Estilos específicos para mobile */
+  @media screen and (max-width: 768px) {
+    .button {
+      width: 100%; // Faz o botão ocupar 100% da largura disponível no mobile
+      height: 45px; // Altura reduzida para mobile
+      font-size: 0.875rem; // Tamanho da fonte menor
+    }
+  
+    .container {
+      padding: 0 1rem; // Adiciona um padding para manter o espaçamento nas laterais
+      justify-content: flex-start; // Alinha o botão à esquerda, junto com o header
+    }
+
+    .newTaskButton {
+        margin: 0 18px 0 18px;
+    }
+  }
+  
