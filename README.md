@@ -4,7 +4,7 @@ Este é um projeto desenvolvido com [Next.js](https://nextjs.org), utilizando [`
 
 ## Descrição
 
-Este projeto é um aplicativo de gerenciamento de tarefas onde os usuários podem adicionar, concluir e excluir tarefas.
+Este projeto é um aplicativo de gerenciamento de tarefas onde os usuários podem adicionar, concluir e excluir tarefas. As tarefas são armazenadas no `localStorage` do navegador, garantindo que as informações persistam mesmo após recarregar a página.
 
 ## Começando
 
@@ -14,4 +14,8 @@ Para iniciar o projeto, siga os passos abaixo:
    ```bash
    npm install
 
-## Deploy
+## Acesse o Projeto
+
+O aplicativo de gerenciamento de tarefas está disponível online. Você pode acessá-lo através do seguinte link:
+
+[Projeto de Gerenciamento de Tarefas](https://home-tarefas.vercel.app/)
